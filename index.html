@@ -10,9 +10,11 @@
     <style>
         .text-justify {
             text-align: justify;
-            #carouselExampleCaptions img {
-                aspect-ratio: 16/9;
-            }
+        }
+
+        #carouselExampleCaptions img,
+        .card img {
+            aspect-ratio: 16/9;
         }
     </style>
 </head>
@@ -20,32 +22,34 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark"data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                  </li>
-                  <li class="nav-item">
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <!-- MAIN -->
     <main>
@@ -53,43 +57,48 @@
         <!-- CAROUSEL -->
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/img/code.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                <div class="carousel-item active">
+                    <img src="/assets/img/code.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/coding.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                <div class="carousel-item">
+                    <img src="/assets/img/coding.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/img/source.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <div class="carousel-item">
+                    <img src="/assets/img/source.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
-          <!-- END CAROUSEL -->
+        </div>
+        <!-- END CAROUSEL -->
         <!-- HOME SECTION -->
         <section id="home" class="container-fluid">
             <h2>Home</h2>
@@ -110,18 +119,99 @@
         <!-- GALLERY SECTION -->
         <section id="gallery" class="container-fluid">
             <h2>Gallery</h2>
-            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, sit eos minima
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- START CARD -->
+                    <div class="card mb-3">
+                        <img src="/assets/img/cyber-security-3480163_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mb-3">
+                        <img src="/assets/img/cyber-glasses-1938449_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mb-3">
+                        <img src="/assets/img/code-583795_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mb-3">
+                        <img src="/assets/img/engineer-4690505_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mb-3">
+                        <img src="/assets/img/hacker-5332676_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card mb-3">
+                        <img src="/assets/img/programming-3652497_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+                sit eos minima
                 itaque, corporis veniam
-                maxime nemo, tenetur officiis nesciunt distinctio enim accusamus porro magnam explicabo quisquam earum
-                ipsam magni rerum. Quidem adipisci, quam nisi nemo autem accusamus ex repudiandae, nesciunt mollitia
-                sunt molestiae aspernatur odio et officiis delectus maxime distinctio fugiat debitis nostrum recusandae
-                exercitationem! Possimus dignissimos, temporibus sint est veniam enim cumque quidem error! Quas
-                molestiae accusamus corporis quam distinctio ipsum deleniti repudiandae repellat numquam doloribus.
-                Libero, illo nulla aliquam itaque corporis sapiente quibusdam dignissimos laborum consectetur esse nisi
-                incidunt in temporibus voluptates, aut aliquid deleniti. Molestias officia sunt temporibus distinctio
-                dicta saepe eum consectetur? Expedita, sint assumenda quam odio dicta ipsa doloremque odit excepturi
-                enim? Porro beatae at velit consequuntur nulla temporibus eveniet, dolor nostrum deleniti hic pariatur
-                illo aperiam et sapiente, aliquam sed architecto voluptates eius aspernatur cupiditate excepturi
+                maxime nemo, tenetur officiis nesciunt distinctio enim accusamus porro magnam
+                explicabo quisquam earum
+                ipsam magni rerum. Quidem adipisci, quam nisi nemo autem accusamus ex repudiandae,
+                nesciunt mollitia
+                sunt molestiae aspernatur odio et officiis delectus maxime distinctio fugiat debitis
+                nostrum recusandae
+                exercitationem! Possimus dignissimos, temporibus sint est veniam enim cumque quidem
+                error! Quas
+                molestiae accusamus corporis quam distinctio ipsum deleniti repudiandae repellat
+                numquam doloribus.
+                Libero, illo nulla aliquam itaque corporis sapiente quibusdam dignissimos laborum
+                consectetur esse nisi
+                incidunt in temporibus voluptates, aut aliquid deleniti. Molestias officia sunt
+                temporibus distinctio
+                dicta saepe eum consectetur? Expedita, sint assumenda quam odio dicta ipsa
+                doloremque odit excepturi
+                enim? Porro beatae at velit consequuntur nulla temporibus eveniet, dolor nostrum
+                deleniti hic pariatur
+                illo aperiam et sapiente, aliquam sed architecto voluptates eius aspernatur
+                cupiditate excepturi
                 consectetur praesentium dolorum. Consequatur quis dignissimos culpa.</p>
         </section>
         <!-- CONTACT SECTION -->
